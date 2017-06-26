@@ -55,7 +55,7 @@ app.delete('/quotes', (req, res) => {
   });
 });
 
-MongoClient.connect('mongodb://daneasterman:daniel@ds131510.mlab.com:31510/star-wars-quotes', (err, database) => {
+MongoClient.connect("mongodb://daneasterman:daniel@ds131510.mlab.com:31510/star-wars-quotes", (err, database) => {
   if (err) return console.log(err);
   db = database;
   app.listen(3000, function() {

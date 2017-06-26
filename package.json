@@ -1,12 +1,13 @@
 {
-  "name": "node-crud-app",
+  "name": "express-mongo-crud",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.14.0",
-    "mongodb": "^2.2.29"
+    "mongodb": "^2.2.29",
+    "ejs": "^1.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
