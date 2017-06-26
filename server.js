@@ -33,7 +33,7 @@ app.post('/quotes', (req, res) => {
 
 app.put('/quotes', (req, res) => {
   db.collection('quotes')
-  .findOneAndUpdate({name: 'yoda'}, {
+  .findOneAndUpdate({name: 'Yoda'}, {
     $set: {
       name: req.body.name,
       quote: req.body.quote
@@ -55,7 +55,7 @@ app.delete('/quotes', (req, res) => {
   });
 });
 
-MongoClient.connect("mongodb://daneasterman:daniel@ds131510.mlab.com:31510/star-wars-quotes", (err, database) => {
+MongoClient.connect(process.env.MONGO_TEST_URL, (err, database) => {
   if (err) return console.log(err);
   db = database;
   app.listen(3000, function() {

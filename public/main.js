@@ -5,7 +5,7 @@ updateButton.addEventListener('click', function() {
   fetch('quotes', {
     method: 'put',
     headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify( {'name': 'Darth Vader2', 'quote': 'VER2: I find your lack of faith disturbing.' } )
+    body: JSON.stringify( {'name': 'Darth Vader', 'quote': 'I find your lack of faith disturbing.' } )
   }).then(res => {
       if (res.ok) return res.json();
     }).then(data => {
@@ -21,7 +21,7 @@ deleteButton.addEventListener('click', function () {
     method: 'delete',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      'name': 'Darth Vader1'
+      'name': 'Darth Vader'
     })
   })
   .then(res => {
