@@ -12,6 +12,9 @@ Also demonstrates use of EJS templating library.
 
 **N.B:** This project uses local "environment variable" for MongoDB url reference. This will *not* work "straight out of the box" for your own cloned copy.  Set up your own free 500mb sandbox to run the MongoDB database here: [https://mlab.com/](https://mlab.com/)
 
+To run the local server on your machine use: `npm run dev`.
+This will open port 3000, so in Mac go to `localhost:3000`
+
 
 
 
