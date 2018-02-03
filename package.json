@@ -5,9 +5,9 @@
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "ejs": "^2.5.5",
     "express": "^4.14.0",
-    "mongodb": "^2.2.29",
-    "ejs": "^1.0.0"
+    "mongodb": "^2.2.29"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
